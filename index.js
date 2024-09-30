@@ -86,7 +86,8 @@ function validateError(error) {
   return { errorMessage, errorStatus };
 }
 
-app.listen(8080, () => {
-  console.log("The server is now running on port 8080");
-  open("http://localhost:8080");
+const PORT = process.env.PORT || 8080;
+
+app.listen(PORT, function() {
+  console.log(`El servidor está funcionando en el puerto ${PORT}`);
 });
