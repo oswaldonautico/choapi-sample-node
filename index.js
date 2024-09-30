@@ -86,7 +86,7 @@ function validateError(error) {
   return { errorMessage, errorStatus };
 }
 
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 443;
 
 app.listen(PORT, function() {
   console.log(`El servidor está funcionando en el puerto ${PORT}`);
